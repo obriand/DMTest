@@ -1,7 +1,7 @@
 package com.example.dmtest;
 
-import com.example.dmtest.request.RequestManager;
-import com.example.dmtest.request.RequestListener;
+import java.util.HashMap;
+
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -10,7 +10,9 @@ import android.view.MenuItem;
 import android.widget.Toast;
 import android.support.v4.app.NavUtils;
 
-public class DMTest extends Activity implements RequestListener {
+import com.loopj.android.http.*;
+
+public class DMTest extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -18,21 +20,15 @@ public class DMTest extends Activity implements RequestListener {
         setContentView(R.layout.activity_dmtest);
         
 		// Make a http request
+        AsyncHttpClient client = new AsyncHttpClient();
         Toast.makeText(getApplicationContext(), "Make the request", Toast.LENGTH_LONG).show();
-        String jsonBody = "";
-        new RequestManager(getApplicationContext()).doPost("https://api.dailymotion.com/", jsonBody, this);  
-        
+        client.get("https://api.dailymotion.com/channel/kids/videos?filters=official", new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(String response) {
+                System.out.println(response);
+                Toast.makeText(getApplicationContext(), "Response : "+response, Toast.LENGTH_LONG).show();
+            }
+        });
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_dmtest, menu);
-        return true;
-    }
-    
-	public void onResponse(int code, String response) {
-		Toast.makeText(getApplicationContext(), "response code: "+code, Toast.LENGTH_LONG).show();
-		Toast.makeText(getApplicationContext(), "response body: "+response, Toast.LENGTH_LONG).show();
-	}
     
 }
