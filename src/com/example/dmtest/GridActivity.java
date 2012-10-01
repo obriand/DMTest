@@ -31,7 +31,7 @@ public class GridActivity extends Activity {
    //init dummy bitmap,
    //using R.drawable.icon for all items
    for(int i = 0; i < NumberOfItem; i++){
-    bitmap[i] = BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_launcher);
+    bitmap[i] = BitmapFactory.decodeResource(context.getResources(), R.drawable.trotro);
    }
   }
  

@@ -26,6 +26,9 @@
         <activity android:name=".GridActivity">
         </activity>
         
+        <activity android:name=".VideosDetailsActivity">
+        </activity>
+        
     </application>
 
 </manifest>

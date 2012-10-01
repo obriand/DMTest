@@ -26,6 +26,7 @@ public class DMTest extends Activity {
         setContentView(R.layout.activity_dmtest);
     }
     
+    // Get all videos for homescreen
     public void getVideosKids(View view) {  
 		// Make a http request
         AsyncHttpClient client = new AsyncHttpClient();
@@ -61,6 +62,11 @@ public class DMTest extends Activity {
     }
     
     public void launchGridView(View view) {      	
+    	Intent intent = new Intent(DMTest.this, GridActivity.class);
+    	startActivity(intent);
+    }
+    
+    public void launchVideoDetailsView(View view) {      	
     	Intent intent = new Intent(DMTest.this, GridActivity.class);
     	startActivity(intent);
     }
