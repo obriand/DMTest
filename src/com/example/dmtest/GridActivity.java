@@ -41,34 +41,6 @@ public class GridActivity extends Activity {
 		
 		private ArrayList<String> videoURLs = new ArrayList<String>();
 
-//		MyAdapter(Context c) {
-//			context = c;
-//			layoutInflater = LayoutInflater.from(context);
-//
-//			// init dummy bitmap,
-//			// using R.drawable.icon for all items
-//			Toast.makeText(getApplicationContext(),"videoURLs.size() : "+videoURLs.size(), Toast.LENGTH_LONG).show();
-//			for (int i = 0; i < NumberOfItem; i++) {				
-//				bitmap[i] = BitmapFactory.decodeResource(
-//						context.getResources(), R.drawable.default_grid_image);
-//			}
-//		}
-		
-//		public Bitmap getBitmapFromURL(String src) {
-//		    try {
-//		        URL url = new URL(src);
-//		        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-//		        connection.setDoInput(true);
-//		        connection.connect();
-//		        InputStream input = connection.getInputStream();
-//		        Bitmap myBitmap = BitmapFactory.decodeStream(input);
-//		        return myBitmap;
-//		    } catch (IOException e) {
-//		        e.printStackTrace();
-//		        return null;
-//		    }
-//		}
-
 		public int getCount() {
 			// TODO Auto-generated method stub
 			return bitmap.length;
