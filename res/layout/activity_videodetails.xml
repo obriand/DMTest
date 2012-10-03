@@ -11,5 +11,10 @@
         android:layout_centerVertical="true"
         android:padding="@dimen/padding_medium"
         android:text="@string/hello_world"/>
+    
+    <VideoView
+      android:id="@+id/surface_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
 
 </LinearLayout>

@@ -22,7 +22,40 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="16dp"
         android:text="get kids videos official" 
-		android:onClick="getVideosKids" />  
+		android:onClick="getVideosKids" />
+    
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:text="getUserIdByName - pocoyo_fr" 
+		android:onClick="getUserIdByName" /> 
+		
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:text="getPlaylistIdsByUserId - pocoyo_fr" 
+		android:onClick="getPlaylistsIdsByUserId" /> 
+		
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:text="getVideoIdsbyPlaylistId - pocoyo_fr" 
+		android:onClick="getVideoIdsbyPlaylistId" /> 
     
     <Button
         android:id="@+id/button2"
@@ -33,6 +66,17 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="16dp"
         android:text="launch grid view" 
-		android:onClick="launchGridView" />		
+		android:onClick="launchGridView" />	
+		
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:text="video details view" 
+		android:onClick="launchVideoDetailsView" />		
 
 </LinearLayout>
