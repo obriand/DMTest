@@ -86,8 +86,6 @@ public class GridActivity extends Activity {
 		setContentView(R.layout.activity_grid);
 		gridView = (GridView) findViewById(R.id.grid);
 
-//		MyAdapter adapter = new MyAdapter(this);
-//		gridView.setAdapter(adapter);
 		ArrayList<HashMap<String, Object>> photos = new ArrayList();
 		HashMap photo = new HashMap();
 		photo.put("file", "160x120-QHY.jpg");
